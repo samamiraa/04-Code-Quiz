@@ -85,5 +85,14 @@ var scoreCard = document.getElementById("score-card");
 var start = document.getElementById("start-quiz");
 var save = document.getElementById("save");
 var pTags = document.querySelectorAll("p");
+var time = document.getElementById("time");
+var quizTitle = document.getElementById("quiz-title");
+var startBtn = document.getElementById("start-quiz");
+var saveBtn = document.getElementById("save");
 
 document.body.style.backgroundColor = "#ffecec";
+document.body.style.textAlign = "center";
+time.setAttribute("style", "font-size: 25px; font-weight: bold;");
+quizTitle.setAttribute("style", "text-align: center;");
+scoreCard.setAttribute("style", "text-align: left;");
+

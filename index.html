@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Quiz</title>
 </head>
+
+<header>
+    <nav id="score-card">Scorecard</nav>
+</header>
+
 <body>
-    <div>Time: <span id="timer">0</span></div>
-
-    <div id="score-card">Scorecard</div>
-
-    <div>
+    <div id="quiz-title">
         <h1>Want to test your knowledge?</h1>
             <p>Take this 10 question quiz to see how many you get correct in 60 seconds. Careful though, every answer you get wrong will take away 5 seconds.</p>
+    </div>
+
+    <div id="time">Time: <span id="timer">0</span></div>
+
+    <div>
+        <h2 class="question"></h2>
+            <p class="options"></p>
     </div>
 
     <button id="start-quiz">Start Quiz</button>
