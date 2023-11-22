@@ -80,19 +80,37 @@ var questionPackages = [
     answer: "for(i = 0; i < 5; i++)"
 }];
 
-var timer = document.getElementById("timer");
 var scoreCard = document.getElementById("score-card");
 var start = document.getElementById("start-quiz");
 var save = document.getElementById("save");
-var pTags = document.querySelectorAll("p");
+var quizDescription = document.getElementById("quiz-description");
 var time = document.getElementById("time");
 var quizTitle = document.getElementById("quiz-title");
+var questionContainer = document.querySelector(".question-container");
+var optionsContainer = document.querySelector(".options-container");
 var startBtn = document.getElementById("start-quiz");
-var saveBtn = document.getElementById("save");
 
 document.body.style.backgroundColor = "#ffecec";
 document.body.style.textAlign = "center";
+document.body.style.fontFamily = "Monospace";
 time.setAttribute("style", "font-size: 25px; font-weight: bold;");
 quizTitle.setAttribute("style", "text-align: center;");
-scoreCard.setAttribute("style", "text-align: left;");
+scoreCard.setAttribute("style", "text-align: left; font-size: 25px; font-weight: bold;");
+quizDescription.setAttribute("style", "font-size: 20px;");
+startBtn.setAttribute("style", "padding: 10px; background-color: #bb3131; color: #ffecec;");
+
+var startBtn = document.getElementById("start-quiz").addEventListener("click", function() {
+    var secondsLeft = 60;
+
+    var timeInterval = setInterval(function() {
+        document.getElementById("timer").innerHTML = secondsLeft;
+        secondsLeft--;
+
+        if (secondsLeft === 0) {
+            clearInterval(timeInterval);
+        }
+    }, 1000); 
+});
+
+
 

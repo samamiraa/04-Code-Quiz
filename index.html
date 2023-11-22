@@ -12,20 +12,18 @@
 
 <body>
     <div id="quiz-title">
-        <h1>Want to test your knowledge?</h1>
-            <p>Take this 10 question quiz to see how many you get correct in 60 seconds. Careful though, every answer you get wrong will take away 5 seconds.</p>
+        <h1>Want to test your knowledge with HTML, CSS and Javascript?</h1>
+            <p id="quiz-description">Take this 10 question quiz to see how many you get correct in 60 seconds. Careful though, every answer you get wrong will take away 5 seconds.</p>
     </div>
 
-    <div id="time">Time: <span id="timer">0</span></div>
+    <div id="time">Time: <span id="timer">60</span> seconds remaining</div>
 
     <div>
-        <h2 class="question"></h2>
-            <p class="options"></p>
+        <h2 class="question-container"></h2>
+            <p class="options-container"></p>
     </div>
 
     <button id="start-quiz">Start Quiz</button>
-
-    <button id="save">Save Score</button>
 
     <script src="./script.js"></script>
 </body>
