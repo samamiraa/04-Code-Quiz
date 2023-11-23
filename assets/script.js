@@ -80,8 +80,6 @@ var questionPackages = [
     answer: "for(i = 0; i < 5; i++)"
 }];
 
-var startBtn = document.getElementById("start-quiz");
-
 var startBtn = document.getElementById("start-quiz").addEventListener("click", function() {
     var secondsLeft = 60;
 
