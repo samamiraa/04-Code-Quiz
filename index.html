@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Quiz</title>
+    <link rel="reset" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <header>
@@ -18,13 +20,16 @@
 
     <div id="time">Time: <span id="timer">60</span> seconds remaining</div>
 
-    <div>
-        <h2 class="question-container"></h2>
-            <p class="options-container"></p>
+    <div  class="quiz-container">
+        <h2 id="question-container"></h2>
+            <button class="options-container">Option 1</button>
+            <button class="options-container">Option 2</button>
+            <button class="options-container">Option 3</button>
+            <button class="options-container">Option 4</button>
     </div>
 
     <button id="start-quiz">Start Quiz</button>
 
-    <script src="./script.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>

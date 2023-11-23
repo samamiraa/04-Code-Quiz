@@ -80,24 +80,7 @@ var questionPackages = [
     answer: "for(i = 0; i < 5; i++)"
 }];
 
-var scoreCard = document.getElementById("score-card");
-var start = document.getElementById("start-quiz");
-var save = document.getElementById("save");
-var quizDescription = document.getElementById("quiz-description");
-var time = document.getElementById("time");
-var quizTitle = document.getElementById("quiz-title");
-var questionContainer = document.querySelector(".question-container");
-var optionsContainer = document.querySelector(".options-container");
 var startBtn = document.getElementById("start-quiz");
-
-document.body.style.backgroundColor = "#ffecec";
-document.body.style.textAlign = "center";
-document.body.style.fontFamily = "Monospace";
-time.setAttribute("style", "font-size: 25px; font-weight: bold;");
-quizTitle.setAttribute("style", "text-align: center;");
-scoreCard.setAttribute("style", "text-align: left; font-size: 25px; font-weight: bold;");
-quizDescription.setAttribute("style", "font-size: 20px;");
-startBtn.setAttribute("style", "padding: 10px; background-color: #bb3131; color: #ffecec;");
 
 var startBtn = document.getElementById("start-quiz").addEventListener("click", function() {
     var secondsLeft = 60;
@@ -110,7 +93,24 @@ var startBtn = document.getElementById("start-quiz").addEventListener("click", f
             clearInterval(timeInterval);
         }
     }, 1000); 
+
+    getQuestion();
 });
 
+var currentQuestion = 0;
+var score = 0;
+
+function getQuestion() {
+    var questionContainer = document.getElementById("question-container");
+    var optionsContainer = document.querySelector(".options-container");
+
+    var currentIndex = Math.floor(Math.random() * questionPackages.length);
+    currentQuestion = questionPackages[currentIndex];
+
+    return currentQuestion;
+
+    
+
+};
 
 
