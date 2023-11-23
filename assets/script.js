@@ -102,13 +102,5 @@ function getQuestion() {
     var questionContainer = document.getElementById("question-container");
     var optionsContainer = document.querySelector(".options-container");
 
-    var currentIndex = Math.floor(Math.random() * questionPackages.length);
-    currentQuestion = questionPackages[currentIndex];
-
-    return currentQuestion;
-
-    
 
 };
-
-

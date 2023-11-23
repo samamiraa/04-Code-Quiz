@@ -29,12 +29,14 @@ p {
     color: #fff1f1;
 }
 
-#start-quiz {
+#start-quiz,
+#score-card {
     margin: 20px;
     padding: 20px;
     font-size: 20px;
     background-color: #f5f5f5;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .quiz-container {
@@ -45,6 +47,7 @@ p {
     padding: 20px;
     width: 700px;
     border-radius: 10px;
+    display: none;
 }
 
 .options-container {
@@ -55,12 +58,14 @@ p {
     padding: 20px;
     border-radius: 10px;
     background-color: #f5f5f5;
+    cursor: pointer;
 }
 
 .options-container:hover {
     box-shadow: inset 0px 0px 10px #ffed9c, 0 0 20px #ffed9c;
 }
 
-#start-quiz:hover {
+#start-quiz:hover,
+#score-card:hover {
     box-shadow: inset 0px 0px 10px #414141, 0 0 20px #414141;
 }
