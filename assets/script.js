@@ -1,3 +1,6 @@
+var startBtn = document.getElementById("start-quiz");
+var quizContainer = document.getElementById("quiz-container");
+
 var questionPackages = [
     {
     question: "What does HTML stand for?",
@@ -80,7 +83,7 @@ var questionPackages = [
     answer: "for(i = 0; i < 5; i++)"
 }];
 
-var startBtn = document.getElementById("start-quiz").addEventListener("click", function() {
+startBtn.addEventListener("click", function() {
     var secondsLeft = 60;
 
     var timeInterval = setInterval(function() {
@@ -92,11 +95,14 @@ var startBtn = document.getElementById("start-quiz").addEventListener("click", f
         }
     }, 1000); 
 
-    getQuestion();
+    quizContainer.setAttribute("style", "display: flex;");
+    startBtn.setAttribute("style", "display: none;")
 });
 
 var currentQuestion = 0;
 var score = 0;
+
+startBtn.addEventListener("click", getQuestion());
 
 function getQuestion() {
     var questionContainer = document.getElementById("question-container");
