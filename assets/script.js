@@ -109,10 +109,6 @@ function getQuestion() {
     var questionContainer = document.getElementById("question-container");
     var optionButtons = document.getElementById("option-buttons");
 
-    while(optionButtons.firstChild){
-    optionButtons.removeChild(optionButtons.firstChild);
-    }
-    
     var currentQuestion = questionPackages[0];
     questionContainer.textContent = currentQuestion.question;
 
