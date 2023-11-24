@@ -96,17 +96,23 @@ startBtn.addEventListener("click", function() {
     }, 1000); 
 
     quizContainer.setAttribute("style", "display: flex;");
-    startBtn.setAttribute("style", "display: none;")
+    startBtn.setAttribute("style", "display: none;");
+
+    getQuestion();
 });
 
-var currentQuestion = 0;
+var currentQuestionIndex = 0;
 var score = 0;
 
-startBtn.addEventListener("click", getQuestion());
 
 function getQuestion() {
     var questionContainer = document.getElementById("question-container");
     var optionsContainer = document.querySelector(".options-container");
+    var currentQuestion = questionPackages[0];
+    questionContainer.textContent = currentQuestion.question;
 
 
 };
+
+
+
