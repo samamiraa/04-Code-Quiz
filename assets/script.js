@@ -8,79 +8,98 @@ var questionPackages = [
         { text: "Hyper Text Markup Language"},
         { text: "Hotdogs Tacoos Muffins Linguini"}, 
         { text: "Home Tv Makeup Living"}, 
-        { text: "Hyperlinks Text Markup Language"}],
+        { text: "Hyperlinks Text Markup Language"}
+    ],
     answer: "Hyper Text Markup Language"
 }, 
 {
     question: "What does CSS stand for?",
-    options: ["Cute Style Sheets",
-              "Cut Style Shave",
-              "Cascading Style Sheets",
-              "Cascading Styling Sheet"],
+    options: [
+        { text:"Cute Style Sheets"},
+        { text:"Cut Style Shave"},
+        { text:"Cascading Style Sheets"},
+        { text:"Cascading Styling Sheet"}
+    ],
     answer: "Cascading Style Sheets"
 },
 {
     question: "What does API stand for?",
-    options: ["App Programming Iteration",
-              "Apple Programming Interface",
-              "Application Program Iteration",
-              "Application Programming Interface"],
+    options: [
+        { text:"App Programming Iteration"},
+        { text:"Apple Programming Interface"},
+        { text:"Application Program Iteration"},
+        { text:"Application Programming Interface"}
+    ],
     answer: "Application Programming Interface"
 },
 {
     question: "What HTML element will have the largest heading?",
-    options: ["<h6>",
-              "<h1>",
-              "<h3>",
-              "<h4>"],
+    options: [
+        { text:"<h6>"},
+        { text:"<h1>"},
+        { text:"<h3>"},
+        { text:"<h4>"}
+    ],
     answer: "<h1>"
 },
 {
     question: "What is the default direction for flexbox unless specified?",
-    options: ["Row",
-              "Column",
-              "Flex-start",
-              "Flex-end"],
+    options: [
+        { text:"Row"},
+        { text:"Column"},
+        { text:"Flex-start"},
+        { text:"Flex-end"}
+    ],
     answer: "Row"
 },
 {
     question: "What value does a Boolean have?",
-    options: ["A string",
-              "An Array",
-              "A number",
-              "True/False"],
+    options: [
+        { text:"A string"},
+        { text:"An Array"},
+        { text:"A number"},
+        { text:"True/False"}
+    ],
     answer: "True/False"
 },
 {
     question: "What is the correct HTML element for inserting a line break?",
-    options: ["<p>",
-              "<br>",
-              "<div>",
-              "id"],
+    options: [
+        { text:"<p>"},
+        { text:"<br>"},
+        { text:"<div>"},
+        { text:"id"}
+    ],
     answer: "<br>"
 },
 {
     question: "Which property is used to set text color?",
-    options: ["text-color",
-              "background-color",
-              "color",
-              "textColor"],
+    options: [
+        { text:"text-color"},
+        { text:"background-color"},
+        { text:"color"},
+        { text:"textColor"}
+    ],
     answer: "color"
 },
 {
     question: "What HTML element do we use to link the external Javascript?",
-    options: ["<javascript>",
-              "<scripts>",
-              "<js>",
-              "<script>"],
+    options: [
+        { text:"<javascript>"},
+        { text:"<scripts>"},
+        { text:"<js>"},
+        { text:"<script>"}
+    ],
     answer: "<script>"
 },
 {
     question: "How does a for loop start?",
-    options: ["for(i = 0; i < 5; i++)",
-              "for i = 0; i < 5; i++",
-              "for(i = 0; i ++)",
-              "for(i =; i < 5)"],
+    options: [
+        { text:"for(i = 0; i < 5; i++)"},
+        { text:"for i = 0; i < 5; i++"},
+        { text:"for(i = 0; i ++)"},
+        { text:"for(i =; i < 5)"}
+    ],
     answer: "for(i = 0; i < 5; i++)"
 }];
 

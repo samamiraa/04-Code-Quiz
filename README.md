@@ -39,7 +39,6 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/learn/lecture/13703646#overview
 https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer
 https://www.w3schools.com/jsref/jsref_foreach.asp
-https://www.w3schools.com/js/js_loop_while.asp
 
 ## License
 
