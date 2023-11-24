@@ -4,10 +4,11 @@ var quizContainer = document.getElementById("quiz-container");
 var questionPackages = [
     {
     question: "What does HTML stand for?",
-    options: ["Hyper Text Markup Language",
-              "Hotdogs Tacoos Muffins Linguini", 
-              "Home Tv Makeup Living", 
-              "Hyperlinks Text Markup Language"],
+    options: [
+        { text: "Hyper Text Markup Language"},
+        { text: "Hotdogs Tacoos Muffins Linguini"}, 
+        { text: "Home Tv Makeup Living"}, 
+        { text: "Hyperlinks Text Markup Language"}],
     answer: "Hyper Text Markup Language"
 }, 
 {
@@ -104,12 +105,23 @@ startBtn.addEventListener("click", function() {
 var currentQuestionIndex = 0;
 var score = 0;
 
-
 function getQuestion() {
     var questionContainer = document.getElementById("question-container");
-    var optionsContainer = document.querySelector(".options-container");
+    var optionButtons = document.getElementById("option-buttons");
+
+    while(optionButtons.firstChild){
+    optionButtons.removeChild(optionButtons.firstChild);
+    }
+    
     var currentQuestion = questionPackages[0];
     questionContainer.textContent = currentQuestion.question;
+
+    currentQuestion.options.forEach(options => {
+        var button = document.createElement("button");
+        button.innerHTML = options.text;
+        button.classList.add("options-container");
+        optionButtons.appendChild(button);
+    });
 
 
 };
