@@ -46,6 +46,7 @@ p {
     background-color: #414141;
     padding: 20px;
     width: 700px;
+    max-width: 80%;
     border-radius: 10px;
     display: none;
 }
