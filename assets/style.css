@@ -17,6 +17,10 @@ p {
     font-size: 20px;
 }
 
+input {
+    border-radius: 5px;
+}
+
 #time {
     font-size: 25px;
     font-weight: bold;
@@ -48,6 +52,14 @@ p {
     width: 700px;
     max-width: 80%;
     border-radius: 10px;
+    display: none;
+}
+
+#name-input {
+    font-size: 20px;
+}
+
+.hide {
     display: none;
 }
 
