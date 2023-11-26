@@ -3,7 +3,7 @@ var questionPackages = [
     question: "What does HTML stand for?",
     options: [
         { text: "Hyper Text Markup Language", correct: "true"},
-        { text: "Hotdogs Tacoos Muffins Linguini", correct: "false"}, 
+        { text: "Hotdogs Tacos Muffins Linguini", correct: "false"}, 
         { text: "Home Tv Makeup Living", correct: "false"}, 
         { text: "Hyperlinks Text Markup Language", correct: "false"}
     ]
@@ -95,21 +95,26 @@ var quizContainer = document.getElementById("quiz-container");
 var secondsLeft = 60;
 
 startBtn.addEventListener("click", function() {
-
-    var timeInterval = setInterval(function() {
-        document.getElementById("timer").innerHTML = secondsLeft;
-        secondsLeft--;
-
-        if (secondsLeft === 0) {
-            clearInterval(timeInterval);
-        }
-    }, 1000); 
-
     quizContainer.setAttribute("style", "display: flex;");
     startBtn.setAttribute("style", "display: none;");
 
+    timeInterval();
     getQuestion();
 });
+
+var timer;
+
+ function timeInterval() {
+     timer = setInterval(function() {
+     secondsLeft--;
+         document.getElementById("timer").textContent = secondsLeft;
+
+    if (secondsLeft === 0) {
+        clearInterval(timer);
+        gameOver();
+    }
+ }, 1000); 
+}
 
 var index = 0;
 var score = 0;
@@ -157,8 +162,15 @@ function answerQuestion(e) {
 };
 
 function gameOver() {
+    var scoreCard = document.getElementById("score-card");
+
+    quizContainer.setAttribute("style", "display: none;");
+    scoreCard.textContent = "You got " + score + " out of 10!";
+    clearInterval(timer);
+    keepScore();
+};
+
+function keepScore() {
 
 }
-
-
 
