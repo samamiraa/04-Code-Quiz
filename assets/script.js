@@ -251,21 +251,26 @@ function saveLastScore() {
     saveBtn.classList.remove("hide");
     // Takes value entered from name input
     var firstName = fName.value
+    var scoreValue = score
     // Stores name input in local Storage
     localStorage.setItem("fname", firstName);
+    // Stores score in local storage
+    localStorage.setItem("scoreValue", scoreValue);
 };
 
 // Function to show saved name & score
 function renderLastScore() {
     // Gets name from local storage
     var nameInput = localStorage.getItem("fname");
+    // Gets score from local Storage
+    var getScore = localStorage.getItem("scoreValue");
 
     // Runs if not null
     if (nameInput !== null) {
         // Prevents name input from disappearing
         event.preventDefault();
         // Displays name and score
-        document.getElementById("saved-score").innerHTML = nameInput + " " + score + " out of 10";
+        document.getElementById("saved-score").innerHTML = nameInput + " " + getScore + " out of 10";
     };
 };
 
