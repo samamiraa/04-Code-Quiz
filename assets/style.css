@@ -56,6 +56,17 @@ input {
     cursor: pointer;
 }
 
+#backBtn,
+#view-highscore {
+    margin: 10px;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 /* ID quiz container display, alignment, bg color, padding, width, border radius */
 #quiz-container {
     display: flex;
