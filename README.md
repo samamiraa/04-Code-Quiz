@@ -40,6 +40,10 @@ https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/learn
 https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer
 https://www.w3schools.com/jsref/jsref_foreach.asp
 https://stackoverflow.com/questions/68421164/countdown-timer-only-counts-down-1-second-then-stops
+https://www.w3schools.com/jsref/met_win_clearinterval.asp
+https://stackoverflow.com/questions/14666924/clearinterval-not-working#:~:text=You're%20using%20clearInterval%20incorrectly.&text=The%20problem%20sometimes%20may%20be,static%20solution%20may%20be%20harmful.
+https://developer.mozilla.org/en-US/docs/Web/API/setInterval
+https://www.youtube.com/watch?v=AUOzvFzdIk4
 
 ## License
 

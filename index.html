@@ -1,5 +1,8 @@
+<!-- Doctype to HTML -->
 <!DOCTYPE html>
+<!-- Language to English -->
 <html lang="en">
+<!-- Head containing title, char set, stylesheet and reset CSS -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +11,27 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 
+<!-- Body contains visible elements on webpage -->
 <body>
+    <!-- Div containing page heading and description -->
     <div id="quiz-title">
         <h1>Want to test your knowledge with HTML, CSS and Javascript?</h1>
             <p id="quiz-description">Take this 10 question quiz to see how many you get correct in 60 seconds. Careful though, every answer you get wrong will take away 5 seconds.</p>
     </div>
 
+    <!-- Timer for quiz -->
     <div id="time">Time: <span id="timer">60</span> seconds remaining</div>
 
+    <!-- Button to start quiz -->
     <button id="start-quiz">Start Quiz</button>
 
+    <!-- Div containing Question and Options -->
     <div  id="quiz-container">
         <h2 id="question-container">Question goes here</h2>
             <div id="option-buttons"></div>
     </div>
 
+    <!-- Form for initials, save button and where score is saved -->
     <form>
         <label for="fname" class="hide" id="name-input">Initials:</label><br>
         <input type="text" class="hide" id="fname" name="fname"><br>
@@ -31,8 +40,10 @@
         <h4 id="saved-score"></h4>
     </form>
 
+    <!-- Button to reload webpage -->
     <button class="hide" id="restart">Restart</button>
 
+    <!-- Link to script.js -->
     <script src="./assets/script.js"></script>
 </body>
 </html>
