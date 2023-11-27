@@ -38,7 +38,8 @@ input {
 }
 
 #start-quiz,
-#saveBtn {
+#saveBtn,
+#restart {
     margin: 20px;
     padding: 20px;
     font-size: 20px;
@@ -82,6 +83,8 @@ input {
     box-shadow: inset 0px 0px 10px #ffed9c, 0 0 20px #ffed9c;
 }
 
-#start-quiz:hover {
+#start-quiz:hover,
+#restart:hover,
+#saveBtn:hover {
     box-shadow: inset 0px 0px 10px #414141, 0 0 20px #414141;
 }

@@ -204,6 +204,12 @@ saveBtn.addEventListener("click", function(){
     label.classList.add("hide");
     fName.classList.add("hide");
     saveBtn.classList.add("hide");
+
+    restart.classList.remove("hide");
+
+    restart.addEventListener("click", function(){
+        location.reload();
+    })
 });
 
 startQuiz();
