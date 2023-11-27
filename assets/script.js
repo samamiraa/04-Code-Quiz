@@ -92,11 +92,13 @@ var questionPackages = [
 
 var startBtn = document.getElementById("start-quiz");
 var quizContainer = document.getElementById("quiz-container");
+var time = document.querySelector("time");
+var scoreCard = document.getElementById("score");
 var secondsLeft = 60;
 
 startBtn.addEventListener("click", function() {
     quizContainer.setAttribute("style", "display: flex;");
-    startBtn.setAttribute("style", "display: none;");
+    startBtn.classList.add("hide");
 
     timeInterval();
     getQuestion();
@@ -162,15 +164,43 @@ function answerQuestion(e) {
 };
 
 function gameOver() {
-    var scoreCard = document.getElementById("score-card");
-
     quizContainer.setAttribute("style", "display: none;");
-    scoreCard.textContent = "You got " + score + " out of 10!";
+    scoreCard.classList.remove("hide");
+    scoreCard.innerHTML = "You got " + score + " out of 10!";
     clearInterval(timer);
-    keepScore();
+    saveLastScore();
 };
 
-function keepScore() {
+var fName = document.getElementById("fname");
+var label = document.getElementById("name-input");
+var saveBtn = document.getElementById("saveBtn")
+
+function saveLastScore() {
+    label.classList.remove("hide");
+    fName.classList.remove("hide");
+    saveBtn.classList.remove("hide");
+    var firstName = fName.value
+    localStorage.setItem("fname", firstName);
+};
+
+function renderLastScore() {
+    var nameInput = localStorage.getItem("fname");
+
+    if (nameInput !== null) {
+        event.preventDefault();
+        document.getElementById("saved-score").innerHTML = nameInput + " " + score + " out of 10";
+    };
+};
+
+saveBtn.addEventListener("click", function(){
+    event.preventDefault();
+    saveLastScore();
+    renderLastScore();
+
+    scoreCard.classList.add("hide");
+});
+
+function restart () {
 
 }
 
