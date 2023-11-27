@@ -94,15 +94,18 @@ var startBtn = document.getElementById("start-quiz");
 var quizContainer = document.getElementById("quiz-container");
 var time = document.querySelector("time");
 var scoreCard = document.getElementById("score");
+var restart = document.getElementById("restart");
 var secondsLeft = 60;
 
-startBtn.addEventListener("click", function() {
-    quizContainer.setAttribute("style", "display: flex;");
-    startBtn.classList.add("hide");
+function startQuiz() {
+    startBtn.addEventListener("click", function() {
+        quizContainer.setAttribute("style", "display: flex;");
+        startBtn.classList.add("hide");
 
-    timeInterval();
-    getQuestion();
-});
+        timeInterval();
+        getQuestion();
+    });
+};
 
 var timer;
 
@@ -156,7 +159,7 @@ function answerQuestion(e) {
     if (index < questionPackages.length) {
         var countdown = setTimeout(function(){
             getQuestion();
-        }, 1000
+        }, 500
         )
     } else {
         gameOver();
@@ -198,9 +201,9 @@ saveBtn.addEventListener("click", function(){
     renderLastScore();
 
     scoreCard.classList.add("hide");
+    label.classList.add("hide");
+    fName.classList.add("hide");
+    saveBtn.classList.add("hide");
 });
 
-function restart () {
-
-}
-
+startQuiz();
