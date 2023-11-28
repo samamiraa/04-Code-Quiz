@@ -110,6 +110,8 @@ input {
 /* Button ID's hover properties */
 #start-quiz:hover,
 #restart:hover,
-#saveBtn:hover {
+#saveBtn:hover,
+#view-highscore:hover,
+#backBtn:hover {
     box-shadow: inset 0px 0px 10px #414141, 0 0 20px #414141;
 }

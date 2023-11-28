@@ -37,9 +37,17 @@ Once you hit save score, your initials plus your score will display on the scree
 <br>
 <img width="1280" alt="saved score" src="./images/saved score.png"><br>
 <br>
-Lastly, if you hit restart, the page will reload and take you back to the start screen.<br>
+If you hit restart, the page will reload and take you back to the start screen.<br>
 <br>
-<img width="1280" alt="start screen" src="./images/start screen.png">
+<img width="1280" alt="start screen" src="./images/start screen.png"><br>
+<br>
+You can also view the last highscore by clicking the "view last high score" button.<br>
+<br>
+<img width="1280" alt="view last high score" src="./images/viewlastscorebtn.png"><br>
+<br>
+Then it will take you to another page that will display the last high score.<br>
+<br>
+<img width="1280" alt="last high score display" src="./images/lastscore.png">
 
 ## Credits
 
