@@ -15,7 +15,7 @@ N/A
 
 First you will start at the start screen<br>
 <br>
-<img width="1280" alt="start screen" src="https://github.com/samamiraa/04-Code-Quiz/assets/146762114/9e0083ed-e4ef-43db-b2d4-9874b57bda06"><br>
+<img width="1280" alt="start screen" src="./images/start screen.png"><br>
 <br>
 To start the quiz, press start quiz button and it will take you to the first question.<br>
 <br>
