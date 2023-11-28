@@ -1,7 +1,5 @@
-function viewHighScores() {
-       // Gets name from local storage
+function viewHighScore() {
        var nameInput = localStorage.getItem("fname");
-       // Gets score from local Storage
        var getScore = localStorage.getItem("scoreValue");
 
         var listItems = document.createElement("li");
@@ -11,4 +9,4 @@ function viewHighScores() {
         orderedList.appendChild(listItems);
     };
 
-    viewHighScores();
+    viewHighScore();
